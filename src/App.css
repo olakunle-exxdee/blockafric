@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Antonio", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  margin-top: 2rem;
+  min-width: 370px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: #e1267b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.notify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notify svg:nth-child(1) {
+  font-size: 2.5rem;
+  color: #fb5267;
+}
+.notify svg:nth-child(2) {
+  font-size: 1.5rem;
+  color: #fb5267;
+  margin-left: 0.5rem;
+}
+
+.box {
+  background: #e1267b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 40px;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 2px 2px #afaeae;
+}
+.afya + .afya {
+  margin-left: 8rem;
+}
+.afya-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #e1267b;
+  text-transform: uppercase;
+}
+.afya-content .zar {
+  color: #04a9f4;
+}
+.afya h2 {
+  margin: 0.5rem 0 3rem 0;
+}
+
+.select-text {
+  color: #04a9f4;
+  margin-left: 0.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.form {
+  background: #efefef;
+  padding-top: 1rem;
+}
+
+form {
+  background: #fff;
+  padding: 1rem;
+}
+.form-control {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.form-control label {
+  background: #d5d4d4;
+  padding: 0.5em;
+}
+.form-control input {
+  background: #edeaea;
+  width: 100%;
+  padding: 0.7em;
+  outline: none;
+  border: 1px #d5d4d4 solid;
+}
+.btn-group {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.btn + .btn {
+  margin-left: 2em;
+}
+.btn {
+  display: block;
+  background: #04a9f4;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.6em 0;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.5;
+}
+.recent {
+  background: #ebeaea;
+  padding-bottom: 2rem;
+}
+.recent-text {
+  color: #fff;
+}
+
+.table {
+  border-top: 0.2px solid #dbf4ff;
+  border-left: 0.2px solid #dbf4ff;
+  border-right: 0.2px solid #dbf4ff;
+  margin: 1rem 0 0 0;
+  background: #fff;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 0.2px solid #dbf4ff;
+}
+.list p {
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+  transition: color 300ms ease-in-out;
+  opacity: 0.7;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link svg {
+  font-size: 2rem;
+  color: #e1267b;
+}
+.links {
+  color: #e1267b;
+}
+.active {
+  font-size: 0.8rem;
+  opacity: 1;
 }
